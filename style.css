@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 350px;
+    min-height: 300px;
+    background: black;
+    border-radius: 12px;
+    color: white;
+    overflow: hidden;
+}
+.head{
+    background: green;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.tagZahle,.tagNamen{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7,50px); 
+    row-gap: 10px;
+    text-align: center;
+}
+.tagNamen{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.tagZahle div:hover,.today{
+    border: 2px solid gray;
+    cursor: pointer;
+    margin-top: -4px;
+    background: green;
+}
